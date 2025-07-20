@@ -6,15 +6,19 @@ operator = input("choose the operation (+, -, *,/): ")
 match operator:
     case "+":
         result = num1 + num2
+        print(f"The result is: {result}")
     case "-":
         result = num1 - num2
+        print(f"The result is: {result}")
     case "*":
         result = num1 * num2
+        print(f"The result is: {result}")
     case "/":
-        if num2 != 0:
-            result = num1 / num2
-        else:  # num2 == 0:
+        if num2 == 0:
             print("Cannot divide by zero.")
+        else:
+            result = num1 / num2
+            print(f"The result is: {result}")
     case _:
-        print("Invalid operator")
-print(f"The result is {result}")
+        print("Invalid operator. Please choose from (+, -, *, /)")
+# print(f"The result is: {result}")
