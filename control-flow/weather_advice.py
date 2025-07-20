@@ -1,5 +1,5 @@
-print("What's the weather like today? (sunny/rainy/cold): ")
-weather = input().strip().lower()
+weather = input(
+    "What's the weather like today? (sunny/rainy/cold): ").strip().lower()
 
 
 if weather == "sunny":
@@ -9,5 +9,5 @@ elif weather == "rainny":
 elif weather == "cold":
     message = "Make sure to wear a warm coat"
 else:
-    message = " Sorry I don't have recommendations for this weather"
+    message = "Sorry, I don't have recommendations for this weather."
 print(message)
