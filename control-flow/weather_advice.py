@@ -1,5 +1,6 @@
-weather = input(
-    "What's the weather like today? (sunny/rainy/cold): ").strip().lower()
+print("What's the weather like today? (sunny/rainy/cold): ")
+weather = input().strip().lower()
+
 
 if weather == "sunny":
     message = "wear a t-shirt and sun glasses."
