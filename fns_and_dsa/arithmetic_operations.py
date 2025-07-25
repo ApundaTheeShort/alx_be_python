@@ -1,0 +1,23 @@
+# from arithmetic_operations import
+
+
+def perform_operation(num1, num2, operations):
+    """Fn takes two operators and perform functions on them"""
+
+    match operations:
+        case "add":
+            return num1 + num2
+        case "subtract":
+            return num1 - num2
+        case "multiply":
+            return num1 * num2
+        case "divide":
+            if num2 == 0:
+                return "Can't divide by zero"
+            else:
+                return num1 / num2
+
+
+if __name__ == "__main__":
+    result = perform_operation(5, 0, "multiply")
+    print("Result:", result)
