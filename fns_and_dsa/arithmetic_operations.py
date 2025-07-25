@@ -1,7 +1,7 @@
-def perform_operation(num1, num2, operations):
+def perform_operation(num1, num2, operation):
     """Fn takes two operators and perform functions on them"""
 
-    match operations:
+    match operation:
         case "add":
             return num1 + num2
         case "subtract":
