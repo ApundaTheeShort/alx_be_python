@@ -4,7 +4,7 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError
         else:
             result = float(numerator) / float(denominator)
-            return f"{result:.2f}"
+            return f"{result:.1f}"
 
     except ValueError:
         print("Error: Please enter numeric values only.")
