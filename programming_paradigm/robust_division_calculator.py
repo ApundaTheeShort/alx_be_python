@@ -1,9 +1,9 @@
-def safe_divide(numerator, denomenator):
+def safe_divide(numerator, denominator):
     try:
-        if denomenator == 0:
+        if denominator == 0:
             raise ZeroDivisionError
         else:
-            result = float(numerator) / float(denomenator)
+            result = float(numerator) / float(denominator)
             return result
 
     except ValueError:
