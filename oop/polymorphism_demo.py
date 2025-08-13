@@ -2,23 +2,27 @@ import math
 
 
 class Shape:
+    def __init__(self, length=None, width=None, radius=None):
+        self.length = length
+        self.width = width
+        self.radius = radius
+
     def area(self):
         raise NotImplementedError
 
 
 class Rectangle(Shape):
     def __init__(self, length, width):
-        self.length = length
-        self.width = width
+        super().__init__(length=length, width=width)
 
-    def area(self, length, width):
-        return length * width
+    def area(self):
+        return self.length * self.width
 
 
 class Circle(Shape):
     def __init__(self, radius):
-        self.radius = radius
+        super().__init__(radius=radius)
 
-    def area(self, radius):
-        result = math.pi * (radius * radius)
+    def area(self):
+        result = math.pi * (self.radius * self.radius)
         return result
